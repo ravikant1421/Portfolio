@@ -158,8 +158,8 @@ function openProfile(event) {
 function openProject(event) {
   let currentPrject = event.currentTarget;
   if (currentPrject.getAttribute("id") === "portfolio_web_project") {
-
-    window.open("https://github.com/ravikant1421", "_blank");
+    
+    window.open("https://github.com/ravikant1421/Portfolio", "_blank");
   } else if (currentPrject.getAttribute("id") === "currency_converter_web_project") {
 
     window.open("https://ravikant1421.github.io/Currency-Converter/", "_blank");
