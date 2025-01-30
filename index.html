@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio|Ravikant </title>
+    <!-- unicons src = https://iconscout.com/unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- faivicon src = https://favicon.io/favicon-generator/ -->
+    <link rel="icon" href="assets/favicon_title_logo.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <figure class="nav-logo">
+                <img src="assets/favicon_main_logo.png" alt="Logo">
+            </figure>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link" onclick="myMenuFunction()">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link" onclick="myMenuFunction()">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link" onclick="myMenuFunction()">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link" onclick="myMenuFunction()">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn" onclick="downloadReusme()">Download Resume <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Ravikant Verma</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>I'm <span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Computer Science graduate skilled in Java, Web Development, App Development and Automation
+                            Testing, eager to build
+                            innovative solutions
+                        </p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <button class="btn blue-btn" onclick="hireMe()">Hire Me</button>
+                        <button class="btn" onclick="downloadReusme()">Download Resume <i
+                                class="uil uil-file-alt"></i></button>
+                    </div>
+                    <div class="social_icons">
+                        <div class="icon" onclick="openProfile(event)"><i class="uil uil-linkedin-alt"></i></div>
+                        <div class="icon" onclick="openProfile(event)"><i class="uil uil-brackets-curly"></i></div>
+                        <div class="icon" onclick="openProfile(event)"><i class="uil uil-github-alt"></i></div>
+                    </div>
+                </div>
+            </section>
+            <!-- -------------- ABOUT BOX ---------------- -->
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <h3>My introduction</h3>
+                            <p>Hi, I'm Computer Science graduate with a strong foundation in Java, Web
+                                Development, React.js, and Automation Testing. Passionate about building innovative
+                                software solutions, I have worked on projects ranging from Android applications to
+                                automation testing for e-commerce platforms. With a keen interest in problem-solving and
+                                technology, I constantly strive to enhance my skills and contribute to impactful
+                                projects.
+                            </p>
+                            <div class="about-btn">
+                                <button class="btn" onclick="downloadReusme()">Download Resume <i
+                                        class="uil uil-import"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Skill</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>JAVA</span>
+                                <span>MYSQL</span>
+                                <span>DSA</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>Bootstrap</span>
+                            </div>
+
+                            <div class="achievement-header">
+                                <h3>Achievements</h3>
+                            </div>
+                            <div class="achievement-list">
+                                <span>Won 365 Badge at leetcode</span>
+                                <span>5 Star at Hacker Rank</span>
+                                <span>Won Linkedin Badge</span>
+                                <span>Won Hacker Rank Problem Solving Badge</span>
+                            </div>
+
+                        </div>
+
+                        <div class="education-box">
+                            <div class="education-header">
+                                <h3>Education</h3>
+                            </div>
+                            <div class="education-list">
+                                <span>
+                                    <h4>Collage:</h4>B K Birla Institute of Engineering & Technology, Pilani <h4>CGPA
+                                    </h4>8.12
+                                </span>
+                                <span>
+                                    <h4>12th:</h4>Birla School Pilani <h4>Percentage</h4>79%
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- -------------- PROJECT BOX ---------------- -->
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Projects</h1>
+                </div>
+                <!--Web-->
+                <h4 class="projects_sub_title">Web Projects</h4>
+                <div class="project-container">
+                    <div class="project-box" onclick="openProject(event)" id="portfolio_web_project">
+                        <h4>Portfolio</h4>
+                    </div>
+                    <div class="project-box" onclick="openProject(event)" id="currency_converter_web_project">
+                        <h4>Currency Converter</h4>
+                    </div>
+                    <div class="project-box" onclick="openProject(event)" id="job_application_web_project">
+                        <h4>Job Application</h4>
+                    </div>
+                    <div class="project-box" onclick="openProject(event)" id="About_MSD_web_project">
+                        <h4>About MSD</h4>
+                    </div>
+                </div>
+                <!--Android App-->
+                <h4 class="projects_sub_title">Android App Projects</h4>
+                <div class="project-container">
+                    <div class="project-box" onclick="openProject(event)" id="music_player_app_project">
+                        <h4>Music Player</h4>
+                    </div>
+                    <div class="project-box" onclick="openProject(event)" id="weather_scope_app_project">
+                        <h4>Weather Scope</h4>
+                    </div>
+                    <div class="project-box" onclick="openProject(event)" id="unit_converter_app_project">
+                        <h4>Unit Converter</h4>
+                    </div>
+                </div>
+                <!--Selenium Webdriver-->
+                <h4 class="projects_sub_title">Selenium Projects</h4>
+                <div class="project-container">
+                    <div class="project-box" onclick="openProject(event)" id="e_commerce_driver_project">
+                        <h4>E commerce</h4>
+                    </div>
+                </div>
+            </section>
+            <!-- -------------- CONTACT BOX ---------------- -->
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Get in touch</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i> Email: ravichirawa1421@gmail.com</p>
+                            <p><i class="uil uil-phone"></i> Tel: +91 9829320695</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="text" id="title" class="input-field" placeholder="Title">
+                                <div class="text-area">
+                                    <textarea id="message" placeholder="Message"></textarea>
+                                </div>
+                                <h5 id="alert">Some Fields are Empty !</h5>
+                                <div class="form-button">
+                                    <button class="btn" onclick="send()">Send<i class="uil uil-message"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </main>
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <div class="top-footer">
+                <p>Ravikant Verma.</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon" onclick="openProfile(event)"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon" onclick="openProfile(event)"><i class="uil uil-brackets-curly"></i></div>
+                <div class="icon" onclick="openProfile(event)"><i class="uil uil-github-alt"></i></div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home">Ravikant Verma</a> - All rights reserved
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Typing JS Link src=https://github.com/mattboldt/typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Scroll Relevel src= https://scrollrevealjs.org/guide/hello-world.html -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Main JS -->
+    <script src="App.js"></script>
+</body>
+
+</html>
